@@ -1,0 +1,12 @@
+{
+    "masterVersionFile":"https://www.dropbox.com/s/uvhmray0hgys6fc/locknloaded.version?dl=1",
+    "modName":"Lock and Loaded",
+    #"modThreadId":"13718",
+    #"modNexusId":"10",
+    "modVersion":
+    {
+        "major":0,
+        "minor":1,
+        "patch":"0rc1"
+    }
+}

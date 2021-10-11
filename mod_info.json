@@ -1,0 +1,20 @@
+{
+    "id": "locknloaded",
+    "name": "Lock and Loaded",
+    "author": "Modding Community",
+    "utility": "true",
+    "version": "0.10",
+    "description": "A professional underground network of mercs, assassins and guns-for-hire looking for jobs.",
+    "gameVersion": "0.95a-RC15",
+    "dependencies": [
+        {
+            "id": "lw_lazylib",
+            "name": "LazyLib",
+        },
+        {
+            "id": "MagicLib",
+            "name": "MagicLib",
+        },
+    ],
+    #"modPlugin": "data.scripts.Magic_modPlugin"
+}
