@@ -77,7 +77,7 @@
 		"job_difficultyDescription": "auto",  # "none": no description, "auto": bounty board describes how dangerous the bounty is, any other text: bounty board displays the text.
 		"job_pick_option": "Accept the job", # The text option that, when selected, accepts the bounty job.
 		"job_pick_script": "data.script.FancyScriptThatDoStuff", #optional, triggered after accepting, can be used to trigger further scripts when the mission is taken, for example you may want to have competing bounty hunters
-		"job_memKey":"$jobMemKey",	#default to "$bountyId", memKeys always start with "$"
+		"job_memKey":"$jobMemKey",	# Defaults to "$bountyId", memKeys always start with "$". The specified memkey will be set to false when the job is accepted, then true if it is completed successfully.
 		"job_conclusion_script":"data.script.FancyScriptThatDoStuff", #optional, can be used to give additional rewards or add further consequences in case of failure using memkeys to check the outcome
 		
 		#TARGET COMMANDER (OPTIONAL)
