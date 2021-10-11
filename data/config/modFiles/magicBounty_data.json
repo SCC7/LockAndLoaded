@@ -1,3 +1,4 @@
+{
 "find_fubar": {
 	"trigger_marketFaction_any": [
 		"independent"
@@ -71,4 +72,114 @@
 	"location_prioritizeUnexplored": false,
 	"location_defaultToAnyEntity": true,
 	"author": "Wisp"
+	},
+	"avan_devilish_astronauts":{
+		"trigger_marketFaction_any":["diableavionics", "pirates"],
+		"trigger_marketFaction_alliedWith":false,
+		"trigger_market_minSize":3,
+		"trigger_player_minLevel":6,
+		"trigger_min_days_elapsed":60,
+		"trigger_weight_mult":0.5,
+		"trigger_playerRelationship_atLeast":{
+			"diableavionics":0.1,
+		},
+		#BOUNTY DESCRIPTION
+		"job_name":"Pirate Warband Elimination", #job name in the dialog pick list
+		"job_description":"Your target is Miss Tolstaya. She is a leader of the group calling itself Devilish Astronauts. According to our sources she took that position by defeating previous leader in combat, but we could not confirm that information. \nSince then, under her leadership, this group has obtained a few vessels made by the Diable Avionics. That includes a Versant, used by the Tolstaya as her personal flagship, as well as one Vapor and two Sleet frigates. They have also managed to obtain limited pirate production run versions of the Stratus and the Rime. \nThe group then raided several small Diable Avionics and Pirate convoys, causing large damage to stocks of certain companies and making a fool of few particular military officers. \nOur backers are not happy, so you will be paid for elimination of both Miss Tolstaya and the entirety of her warband.",
+		"job_comm_reply":"Your target, Tolstaya, is looking at you. Her demeanor fits the bloodthirsty pirate you expected to see. \n'I assume someone posted a bounty on us. Someone like you wouldn't bother otherwise. So, it is about time to look into the eyes of death once again.'",
+		"job_deadline":90,
+		"job_credit_reward":90000,
+		"job_reputation_reward":5,
+		"job_type":"obliteration",
+		"job_show_type":true,
+		"job_show_captain":true,
+		"job_show_fleet":preset,
+		"job_show_distance":vanilla,
+		"job_show_arrow":false,
+		"job_difficultyDescription":auto,
+		"job_pick_option":"Accept the job",
+		#"job_memKey":"$avan_devilish_astronauts",
+		#TARGET COMMANDER (OPTIONAL)
+		"target_first_name":"Miss",
+		"target_last_name":"Tolstaya",
+		"target_portrait":"vanilla_pirate14", #id of the sprite in settings.json/graphics/characters
+		#this goes into settings.json of this mod
+		#"vanilla_pirate14":"graphics/portraits/portrait14.png",
+		"target_gender":"FEMALE", #MALE, FEMALE, ANY
+		"target_rank":"terrorist", #rank from campaign.ids.Ranks
+		"target_post":"warlord", #post from campaign.ids.Ranks
+		"target_personality":"aggressive",
+		"target_isAI":false,
+		"target_level":5,
+		"target_elite_skills":2,
+		"target_skill_preference":"GENERIC",
+		#TARGET FLEET
+		#2x diableavionics_sleet_assault
+		#1x diableavionics_sleet_standard
+		#1x diableavionics_versant_assault - flagship
+		#1x diableavionics_vapor_attack
+		#1x diableavionics_vapor_standard
+		#2x diableavionics_stratus_p_combat
+		#1x diableavionics_rime_p_support
+		"fleet_name":"Devilish Astronauts",
+		"fleet_faction":"pirates",
+		"fleet_flagship_variant":"diableavionics_versant_assault",
+		"fleet_flagship_name":"Hyperspace Flower",
+		"fleet_flagship_recoverable":true,
+		"fleet_preset_ships":{
+			"diableavionics_sleet_assault":2,
+			#"diableavionics_sleet_standard":1, disabled for the other frigates
+			#"diableavionics_vapor_attack":1, disabled for the other frigates
+			"cerberus_d_pirates_Shielded":2,
+			"diableavionics_vapor_standard":1,
+			"diableavionics_stratus_p_combat":1, #was 2
+			"diableavionics_rime_p_support":1,
+			"mule_d_pirates_Standard":1,
+		},
+		"fleet_scaling_multiplier":0,
+		"fleet_min_DP":-1,
+		#"fleet_composition_faction":"pirates", #used if the extra ships don't match the fleet's faction. For example a pirate fleet of Hegemony deserters. Required for min FP and player adjustment
+		"fleet_composition_quality":2,
+		"fleet_transponder":false,
+		"fleet_behavior":"AGGRESSIVE",
+		#LOCATION
+		"location_themes":[
+			"theme_derelict",
+			"theme_derelict_survey_ship",
+			"theme_derelict_probes",
+			"theme_interesting_minor",
+			"procgen_no_theme", #not so special bounties should add this attribute
+		],
+		"location_themes_blacklist":[
+			"theme_hidden",
+			"theme_already_occupied",
+			"theme_remnant",
+			"theme_remnant_main",
+			"theme_remnant_secondary",
+			"theme_remnant_no_fleets",
+			"theme_remnant_destroyed",
+			"theme_remnant_suppressed",
+			"theme_remnant_resurgent",
+			"theme_plaguebearers",
+			"theme_breakers",
+			"theme_breakers_main",
+			"theme_breakers_secondary",
+			"theme_breakers_no_fleets",
+			"theme_breakers_destroyed",
+			"theme_breakers_suppressed",
+			"theme_breakers_resurgent",
+			"theme_breakers_homeworld",
+		],
+		"location_entities":[
+			"gate",
+			"station",
+			"wreck",
+			"debris",
+            "gas_giant",
+			"planet",
+			"jump_point",
+		],
+		"location_prioritizeUnexplored":true,
+		"location_defaultToAnyEntity":true,
+	},
 }

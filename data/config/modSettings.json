@@ -6,6 +6,7 @@
 			#["required_mod"] : list mods that are required to load that bounty, can be used to make cross mod bounties. Can be left empty.
 			
 			"find_fubar":[],
+			"avan_devilish_astronauts":[diableavionics],
 		},
     }
 }

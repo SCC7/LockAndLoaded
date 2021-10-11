@@ -2,6 +2,7 @@
     "graphics":{
         "characters":{
             #"portraitId":"graphics/locknloaded/portraits/lnl_yourCaptainPortrait.png",
+			"vanilla_pirate14":"graphics/portraits/portrait14.png",
         },
     },
 }
