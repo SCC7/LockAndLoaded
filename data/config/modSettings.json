@@ -1,12 +1,13 @@
 {
-    "MagicLib":{
-		"bounty_board":{
-			#List bounties that will be loaded from data/config/modFiles/MagicBounty_data.json
-			#"id" : bounty id
-			#["required_mod"] : list mods that are required to load that bounty, can be used to make cross mod bounties. Can be left empty.
+    "MagicLib": {
+		"bounty_board": {
+			# List bounties that will be loaded from data/config/modFiles/MagicBounty_data.json
+			# "id" : bounty id
+			# ["required_mod"] : list mods that are required to load that bounty, can be used to make cross mod bounties. Can be left empty.
 			
 			"find_fubar":[],
-			"avan_devilish_astronauts":[diableavionics],
+			"avan_devilish_astronauts":[ "diableavionics" ],
+			"alexatheos_cruor_penal":[]
 		},
     }
 }
