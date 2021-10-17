@@ -424,7 +424,7 @@
 
     "fleet_name": "Rogue TT Task Force",
     "fleet_faction": "pirates",
-    "fleet_flagship_variant": "medusa_attack",
+    "fleet_flagship_variant": "medusa_Attack",
     "fleet_flagship_name": "Ghost",
     "fleet_flagship_recoverable": true,
     "fleet_preset_ships": {
