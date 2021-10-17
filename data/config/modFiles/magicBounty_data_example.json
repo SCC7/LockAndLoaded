@@ -31,9 +31,13 @@
 		"job_name": "job name", # Default: "Unnamed job". Job name shown in the dialog pick list
 		"job_description": "Long form description of the job", # Default: blank. The description shown upon selecting the job.
                                                                # \n creates a line break, for example "Line one.\nLine two."
-                                                               # $sonOrDaughter "son" if target is male, "daughter" otherwise.
-                                                               # $fatherOrMother "father" if target is male, "mother" otherwise.
+                                                               # $sonOrDaughterOrChild based on bounty commander gender.
+                                                               # $fatherOrMotherOrParent based on bounty commander gender.
+                                                               # $manOrWomanOrPerson based on bounty commander gender.
+                                                               # $hisOrHerOrTheir based on bounty commander gender.
+                                                               # $heOrSheOrThey based on bounty commander gender.
                                                                # $system_name The star system that the bounty fleet is in.
+                                                               # $fleetAssignmentTarget The body that the bounty fleet has been placed near.
                                                                # $shipName The name of the bounty flagship.
                                                                # $target The name of the faction (with article) of the bounty fleet.
                                                                # $reward The amount of credits being given as a reward.
@@ -42,9 +46,9 @@
                                                                # $lastName The last name of the bounty commander.
                                                                # $constellation The constellation that the bounty fleet is in.
 		"job_comm_reply": "Reply of the enemy to your hail", # Default: blank. The text shown if the player opens comms with the bounty fleet, defaults to "The other $shipOrFleet does not answer to your hails."
-		"job_intel_success": "Short text displayed in the intel", # Optional short conclusion text shown in the intel object after the job has been COMPLETED SUCCESSFULLY
-        "job_intel_failure": "Short text displayed in the intel", # Optional short conclusion text shown in the intel object after the job has been failed through FLAGSHIP RECOVERY
-        "job_intel_expired": "Short text displayed in the intel", # Optional short conclusion text shown in the intel object after the job has EXPIRED
+        "job_intel_success": "Short text displayed in the intel", # Default: not shown. Short conclusion text shown in the intel object after the job has been COMPLETED SUCCESSFULLY.
+        "job_intel_failure": "Short text displayed in the intel", # Default: not shown. Short conclusion text shown in the intel object after the job has been failed through FLAGSHIP RECOVERY.
+        "job_intel_expired": "Short text displayed in the intel", # Default: not shown. Short conclusion text shown in the intel object after the job has EXPIRED.
 		"job_forFaction": "faction_offering_the_job", # Default: no faction. Note that unless "job_reputation_reward" is set, successfully completing a bounty will improve relations by 5 points.
 		"job_deadline": 360, # Default: no limit. The number of days to complete the bounty.
 		"job_credit_reward": 9000, # Default: no credit reward. Number of credits to award the player on successful completion.
@@ -52,6 +56,7 @@
 		"job_reputation_reward":5, # Default: 5 rep points. Reputation benefit with the faction posting the bounty, if any, in case of success. Set to 0 or less to disable, does not scale
 		"job_item_reward": { # Default: no item rewards. Lists special items that will be added to the post-battle loot. First value is the item id, second is the number to give the player.
 			"item_A":1,
+			"ship_bp shipId": 1 # Using the same syntax as Console Commands, blueprints may be added. ["fighter_bp", "industry_bp", "modspec", "ship_bp", "weapon_bp"] 
 		},
 		"job_type":"assassination", # Default: assassination.
 				# assassination: required only to disable the flagship, may recover it.
@@ -88,7 +93,7 @@
 		"target_first_name":"Firstname", # Default: randomly selected based on faction.
 		"target_last_name":"Lastname", # Default: randomly selected based on faction.
 		"target_portrait":"portraitId", # Default: randomly selected based on faction. Id of the sprite in settings.json/graphics/characters
-		"target_gender":"ANY", # Default: ANY. [MALE, FEMALE, ANY]
+                "target_gender":"ANY", # Default: ANY. [ANY, UNDEFINED, MALE, FEMALE] ANY will randomly pick between male and female to avoid oddities and issues with texts and portraits.
 		"target_rank": "Captain", # Default: "citizen". Rank from campaign.ids.Ranks [https://jaghaimo.github.io/starsector-api/classcom_1_1fs_1_1starfarer_1_1api_1_1impl_1_1campaign_1_1ids_1_1Ranks.html]
 		"target_post": "Fleet Commander", # Default: "spacer". Post from campaign.ids.Ranks (yes, Ranks, posts are the bottom half). [https://jaghaimo.github.io/starsector-api/classcom_1_1fs_1_1starfarer_1_1api_1_1impl_1_1campaign_1_1ids_1_1Ranks.html]
 		"target_personality": "aggressive", # Default: Randomly selected. Personality from campaign.ids.Personalities ("timid", "cautious", "steady", "aggressive", "reckless")
