@@ -5,7 +5,7 @@
 			# "id" : bounty id
 			# ["required_mod"] : list mods that are required to load that bounty, can be used to make cross mod bounties. Can be left empty.
 			
-			"find_fubar": [],
+			"wisp_find_fubar": [],
 			"avan_devilish_astronauts": [ "diableavionics" ],
 			"alexatheos_cruor_penal": [],
 			"klaw_rogue_tt_fleet": []

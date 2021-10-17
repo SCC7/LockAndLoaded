@@ -1,5 +1,5 @@
 {
-  "find_fubar": {
+  "wisp_find_fubar": {
     "trigger_marketFaction_any": [
       "independent"
     ],
