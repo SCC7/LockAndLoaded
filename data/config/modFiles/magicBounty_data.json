@@ -1,118 +1,121 @@
 {
-"find_fubar": {
-	"trigger_marketFaction_any": [
-		"independent"
-	],
-	"trigger_marketFaction_alliedWith": true,
-	"trigger_market_minSize": 4,
-	"trigger_player_minLevel": 1,
-	"trigger_min_days_elapsed": 1,
-	"trigger_weight_mult": 1,
-	"trigger_playerRelationship_atMost": {
-		"pirates": -0.25,
-	},
-	"job_name": "Find Fubar",
-	"job_description": "I represent the village of New Turil. One year ago, we were saved from a pirate raid by a small group of traveling spacers, but our mayor was killed. One of the spacers stayed in the area, ran for, and was elected mayor. His term was beset by scandal and incompetance from the very beginning, but on the very eve of elections, he has disappeared with the entire treasury!\nFortunately, a few of us saw this coming and purchased Asymmetrical Justice Insurance a while back; half of the payout is yours if you can take him out. His name is Dante 'Fubar' Fresco.",
-	"job_comm_reply": "Greetings! Would you perchance have food to spare? We are running dangerously low on wine, we ran out of milk chocolate just yesterday, and my advisor says we have to wait months before returning to restock the sashimi. No? Oh...",
-	"job_forFaction": "independent",
-	"job_difficultyDescription": "auto",
-	"job_deadline": 60,
-	"job_reputation_reward": 5,
-	"job_credit_reward": 25000,
-	"job_reward_scaling": 1.0,
-	"job_type": "assassination",
-	"job_show_type": true,
-	"job_show_captain": true,
-	"job_show_fleet": "preset",
-	"job_show_distance": "vanillaDistance",
-	"job_show_arrow": true,
-	"job_pick_option": "Accept the job",
-	"job_memKey": "$mb_fubar",
-	"target_first_name": "Dante 'Fubar'",
-	"target_last_name": "Fresco",
-	"target_gender": "MALE",
-	"target_rank": "citizen",
-	"target_post": "aristocrat",
-	"target_personality": "cautious",
-	"target_isAI": false,
-	"target_level": 1,
-	"target_elite_skills": -1,
-	"target_skill_preference": "GENERIC",
-	"fleet_name": "Fubar's Caravan",
-	"fleet_faction": "pirates",
-	"fleet_flagship_variant": "buffalo2_Fighter_Support",
-	"fleet_flagship_name": "'New' New Turil",
-	"fleet_flagship_recoverable": true,
-	"fleet_preset_ships": {
-		"brawler_Assault": 2,
-	},
-	"fleet_scaling_multiplier": 0,
-	"fleet_min_DP": -1,
-	"fleet_composition_faction": "independent",
-	"fleet_composition_quality": 2,
-	"fleet_transponder": false,
-	"fleet_behavior": "ROAMING",
-	"location_distance": "CORE",
-	"location_themes": [
-		"theme_core_unpopulated",
-	],
-	"location_entities": [
-		"gate",
-		"station",
-		"wreck",
-		"debris",
-		"stable_location",
-		"comm_relay",
-		"nav_buoy",
-		"sensor_array",
-		"gas_giant",
-		"planet",
-		"jump_point"
-	],
-	"location_prioritizeUnexplored": false,
-	"location_defaultToAnyEntity": true,
-	"author": "Wisp"
-	},
-	"avan_devilish_astronauts":{
-		"trigger_marketFaction_any":["diableavionics", "pirates"],
-		"trigger_marketFaction_alliedWith":false,
-		"trigger_market_minSize":3,
-		"trigger_player_minLevel":6,
-		"trigger_min_days_elapsed":60,
-		"trigger_weight_mult":0.5,
-		"trigger_playerRelationship_atLeast":{
-			"diableavionics":0.1,
-		},
+  "find_fubar": {
+    "trigger_marketFaction_any": [
+      "independent"
+    ],
+    "trigger_marketFaction_alliedWith": true,
+    "trigger_market_minSize": 4,
+    "trigger_player_minLevel": 1,
+    "trigger_min_days_elapsed": 1,
+    "trigger_weight_mult": 1,
+    "trigger_playerRelationship_atMost": {
+      "pirates": -0.25
+    },
+    "job_name": "Find Fubar",
+    "job_description": "I represent the village of New Turil. One year ago, we were saved from a pirate raid by a small group of traveling spacers, but our mayor was killed. One of the spacers stayed in the area, ran for, and was elected mayor. His term was beset by scandal and incompetance from the very beginning, but on the very eve of elections, he has disappeared with the entire treasury!\nFortunately, a few of us saw this coming and purchased Asymmetrical Justice Insurance a while back; half of the payout is yours if you can take him out. His name is Dante 'Fubar' Fresco.",
+    "job_comm_reply": "Greetings! Would you perchance have food to spare? We are running dangerously low on wine, we ran out of milk chocolate just yesterday, and my advisor says we have to wait months before returning to restock the sashimi. No? Oh...",
+    "job_forFaction": "independent",
+    "job_difficultyDescription": "auto",
+    "job_deadline": 60,
+    "job_reputation_reward": 5,
+    "job_credit_reward": 25000,
+    "job_reward_scaling": 1,
+    "job_type": "assassination",
+    "job_show_type": true,
+    "job_show_captain": true,
+    "job_show_fleet": "preset",
+    "job_show_distance": "vanillaDistance",
+    "job_show_arrow": true,
+    "job_pick_option": "Accept the job",
+    "job_memKey": "$mb_fubar",
+    "target_first_name": "Dante 'Fubar'",
+    "target_last_name": "Fresco",
+    "target_gender": "MALE",
+    "target_rank": "citizen",
+    "target_post": "aristocrat",
+    "target_personality": "cautious",
+    "target_isAI": false,
+    "target_level": 1,
+    "target_elite_skills": -1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Fubar's Caravan",
+    "fleet_faction": "pirates",
+    "fleet_flagship_variant": "buffalo2_Fighter_Support",
+    "fleet_flagship_name": "'New' New Turil",
+    "fleet_flagship_recoverable": true,
+    "fleet_preset_ships": {
+      "brawler_Assault": 2
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_DP": -1,
+    "fleet_composition_faction": "independent",
+    "fleet_composition_quality": 2,
+    "fleet_transponder": false,
+    "fleet_behavior": "ROAMING",
+    "location_distance": "CORE",
+    "location_themes": [
+      "theme_core_unpopulated"
+    ],
+    "location_entities": [
+      "gate",
+      "station",
+      "wreck",
+      "debris",
+      "stable_location",
+      "comm_relay",
+      "nav_buoy",
+      "sensor_array",
+      "gas_giant",
+      "planet",
+      "jump_point"
+    ],
+    "location_prioritizeUnexplored": false,
+    "location_defaultToAnyEntity": true,
+    "author": "Wisp"
+  },
+  "avan_devilish_astronauts": {
+    "trigger_marketFaction_any": [
+      "diableavionics",
+      "pirates"
+    ],
+    "trigger_marketFaction_alliedWith": false,
+    "trigger_market_minSize": 3,
+    "trigger_player_minLevel": 6,
+    "trigger_min_days_elapsed": 60,
+    "trigger_weight_mult": 0.5,
+    "trigger_playerRelationship_atLeast": {
+      "diableavionics": 0.1
+    },
 		#BOUNTY DESCRIPTION
-		"job_name":"Pirate Warband Elimination", #job name in the dialog pick list
-		"job_description":"Your target is Miss Tolstaya. She is a leader of the group calling itself Devilish Astronauts. According to our sources she took that position by defeating previous leader in combat, but we could not confirm that information. \nSince then, under her leadership, this group has obtained a few vessels made by the Diable Avionics. That includes a Versant, used by the Tolstaya as her personal flagship, as well as one Vapor and two Sleet frigates. They have also managed to obtain limited pirate production run versions of the Stratus and the Rime. \nThe group then raided several small Diable Avionics and Pirate convoys, causing large damage to stocks of certain companies and making a fool of few particular military officers. \nOur backers are not happy, so you will be paid for elimination of both Miss Tolstaya and the entirety of her warband.",
-		"job_comm_reply":"Your target, Tolstaya, is looking at you. Her demeanor fits the bloodthirsty pirate you expected to see. \n'I assume someone posted a bounty on us. Someone like you wouldn't bother otherwise. So, it is about time to look into the eyes of death once again.'",
-		"job_deadline":90,
-		"job_credit_reward":90000,
-		"job_reputation_reward":5,
-		"job_type":"obliteration",
-		"job_show_type":true,
-		"job_show_captain":true,
-		"job_show_fleet":preset,
-		"job_show_distance":vanilla,
-		"job_show_arrow":false,
-		"job_difficultyDescription":auto,
-		"job_pick_option":"Accept the job",
+    "job_name": "Pirate Warband Elimination", #job name in the dialog pick list
+    "job_description": "Your target is Miss Tolstaya. She is a leader of the group calling itself Devilish Astronauts. According to our sources she took that position by defeating previous leader in combat, but we could not confirm that information. \nSince then, under her leadership, this group has obtained a few vessels made by the Diable Avionics. That includes a Versant, used by the Tolstaya as her personal flagship, as well as one Vapor and two Sleet frigates. They have also managed to obtain limited pirate production run versions of the Stratus and the Rime. \nThe group then raided several small Diable Avionics and Pirate convoys, causing large damage to stocks of certain companies and making a fool of few particular military officers. \nOur backers are not happy, so you will be paid for elimination of both Miss Tolstaya and the entirety of her warband.",
+    "job_comm_reply": "Your target, Tolstaya, is looking at you. Her demeanor fits the bloodthirsty pirate you expected to see. \n'I assume someone posted a bounty on us. Someone like you wouldn't bother otherwise. So, it is about time to look into the eyes of death once again.'",
+    "job_deadline": 90,
+    "job_credit_reward": 90000,
+    "job_reputation_reward": 5,
+    "job_type": "obliteration",
+    "job_show_type": true,
+    "job_show_captain": true,
+    "job_show_fleet": "preset,",
+    "job_show_distance": "vanilla,",
+    "job_show_arrow": false,
+    "job_difficultyDescription": "auto,",
+    "job_pick_option": "Accept the job",
 		#"job_memKey":"$avan_devilish_astronauts",
 		#TARGET COMMANDER (OPTIONAL)
-		"target_first_name":"Miss",
-		"target_last_name":"Tolstaya",
-		"target_portrait":"vanilla_pirate14", #id of the sprite in settings.json/graphics/characters
+    "target_first_name": "Miss",
+    "target_last_name": "Tolstaya",
+    "target_portrait": "vanilla_pirate14", #id of the sprite in settings.json/graphics/characters
 		#this goes into settings.json of this mod
 		#"vanilla_pirate14":"graphics/portraits/portrait14.png",
-		"target_gender":"FEMALE", #MALE, FEMALE, ANY
-		"target_rank":"terrorist", #rank from campaign.ids.Ranks
-		"target_post":"warlord", #post from campaign.ids.Ranks
-		"target_personality":"aggressive",
-		"target_isAI":false,
-		"target_level":5,
-		"target_elite_skills":2,
-		"target_skill_preference":"GENERIC",
+    "target_gender": "FEMALE", #MALE, FEMALE, ANY
+    "target_rank": "terrorist", #rank from campaign.ids.Ranks
+    "target_post": "warlord", #post from campaign.ids.Ranks
+    "target_personality": "aggressive",
+    "target_isAI": false,
+    "target_level": 5,
+    "target_elite_skills": 2,
+    "target_skill_preference": "GENERIC",
 		#TARGET FLEET
 		#2x diableavionics_sleet_assault
 		#1x diableavionics_sleet_standard
@@ -121,244 +124,348 @@
 		#1x diableavionics_vapor_standard
 		#2x diableavionics_stratus_p_combat
 		#1x diableavionics_rime_p_support
-		"fleet_name":"Devilish Astronauts",
-		"fleet_faction":"pirates",
-		"fleet_flagship_variant":"diableavionics_versant_assault",
-		"fleet_flagship_name":"Hyperspace Flower",
-		"fleet_flagship_recoverable":true,
-		"fleet_preset_ships":{
-			"diableavionics_sleet_assault":2,
+    "fleet_name": "Devilish Astronauts",
+    "fleet_faction": "pirates",
+    "fleet_flagship_variant": "diableavionics_versant_assault",
+    "fleet_flagship_name": "Hyperspace Flower",
+    "fleet_flagship_recoverable": true,
+    "fleet_preset_ships": {
+      "diableavionics_sleet_assault": 2,
 			#"diableavionics_sleet_standard":1, disabled for the other frigates
 			#"diableavionics_vapor_attack":1, disabled for the other frigates
-			"cerberus_d_pirates_Shielded":2,
-			"diableavionics_vapor_standard":1,
-			"diableavionics_stratus_p_combat":1, #was 2
-			"diableavionics_rime_p_support":1,
-			"mule_d_pirates_Standard":1,
-		},
-		"fleet_scaling_multiplier":0,
-		"fleet_min_DP":-1,
+      "cerberus_d_pirates_Shielded": 2,
+      "diableavionics_vapor_standard": 1,
+      "diableavionics_stratus_p_combat": 1, #was 2
+      "diableavionics_rime_p_support": 1,
+      "mule_d_pirates_Standard": 1
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_DP": -1,
 		#"fleet_composition_faction":"pirates", #used if the extra ships don't match the fleet's faction. For example a pirate fleet of Hegemony deserters. Required for min FP and player adjustment
-		"fleet_composition_quality":2,
-		"fleet_transponder":false,
-		"fleet_behavior":"AGGRESSIVE",
+    "fleet_composition_quality": 2,
+    "fleet_transponder": false,
+    "fleet_behavior": "AGGRESSIVE",
 		#LOCATION
-		"location_themes":[
-			"theme_derelict",
-			"theme_derelict_survey_ship",
-			"theme_derelict_probes",
-			"theme_interesting_minor",
-			"procgen_no_theme", #not so special bounties should add this attribute
-		],
-		"location_themes_blacklist":[
-			"theme_hidden",
-			"theme_already_occupied",
-			"theme_remnant",
-			"theme_remnant_main",
-			"theme_remnant_secondary",
-			"theme_remnant_no_fleets",
-			"theme_remnant_destroyed",
-			"theme_remnant_suppressed",
-			"theme_remnant_resurgent",
-			"theme_plaguebearers",
-			"theme_breakers",
-			"theme_breakers_main",
-			"theme_breakers_secondary",
-			"theme_breakers_no_fleets",
-			"theme_breakers_destroyed",
-			"theme_breakers_suppressed",
-			"theme_breakers_resurgent",
-			"theme_breakers_homeworld",
-		],
-		"location_entities":[
-			"gate",
-			"station",
-			"wreck",
-			"debris",
-            "gas_giant",
-			"planet",
-			"jump_point",
-		],
-		"location_prioritizeUnexplored":true,
-		"location_defaultToAnyEntity":true,
-	},
-	{
-		"alexatheos_cruor_penal":{
+    "location_themes": [
+      "theme_derelict",
+      "theme_derelict_survey_ship",
+      "theme_derelict_probes",
+      "theme_interesting_minor",
+      "procgen_no_theme" #not so special bounties should add this attribute
+    ],
+    "location_themes_blacklist": [
+      "theme_hidden",
+      "theme_already_occupied",
+      "theme_remnant",
+      "theme_remnant_main",
+      "theme_remnant_secondary",
+      "theme_remnant_no_fleets",
+      "theme_remnant_destroyed",
+      "theme_remnant_suppressed",
+      "theme_remnant_resurgent",
+      "theme_plaguebearers",
+      "theme_breakers",
+      "theme_breakers_main",
+      "theme_breakers_secondary",
+      "theme_breakers_no_fleets",
+      "theme_breakers_destroyed",
+      "theme_breakers_suppressed",
+      "theme_breakers_resurgent",
+      "theme_breakers_homeworld"
+    ],
+    "location_entities": [
+      "gate",
+      "station",
+      "wreck",
+      "debris",
+      "gas_giant",
+      "planet",
+      "jump_point"
+    ],
+    "location_prioritizeUnexplored": true,
+    "location_defaultToAnyEntity": true
+  },
+  "alexatheos_cruor_penal": {
+	
+		#TRIGGERS (ALL OPTIONAL)
 		
-			#TRIGGERS (ALL OPTIONAL)
-			
-			"trigger_market_id": ["cruor"], # Default: no values. Can default to the other preferences if those are defined and the location doesn't exists due to Nexerelin random mode. 
-												  # This beats all other conditions; a job will ALWAYS show in this market, even if other conditions fail.
-			"trigger_marketFaction_any": ["sindiran_diktat"], # Default: no values. markets of these factions will show the bounty (if other conditions are met).
-			"trigger_marketFaction_alliedWith": false, # Default: false. if true, markets of all factions whose relationship is at least FAVORABLE to ANY ONE of the factions above will show the bounty (if other conditions are met).
-			#"trigger_marketFaction_none": ["other_faction"], # Default: no values. markets of factions listed here will never carry the bounty, regardless of other conditions.
-			#"trigger_marketFaction_enemyWith": false, # Default: false. If true, markets of all factions whose relationship is HOSTILE to EVERY ONE (ALL) of the factions above. Beware when using this parameter with multiple excluded factions.
-			#"trigger_market_minSize": 3, # Default: 0. The minimum size of the market.
-			"trigger_player_minLevel": 8, # Default: 0. The minimum level of the player.
-			"trigger_min_days_elapsed": 90, # Default: 0. The minimum number of days that must have elapsed.
-			"trigger_weight_mult": 1, # Default: -1. Simple frequency multiplier when several bounties compete for limited board slots. Weights are added together, then one is picked at random, with higher weights having a higher chance.
-			#"trigger_memKeys_all": { # Default: no values. The job will only show if ALL of the listed memKeys exist with the specified boolean value.
-			#	"$triggerKey":true,
-			#},
-			#"trigger_memKeys_any": { # Default: no values. The job will show if ANY of the listed memKeys exist with the specified boolean value.
-			#	"$triggerKey":true,
-			#},
-			"trigger_playerRelationship_atLeast": { # Default: no values. This job will require the player to have the specified relationship or HIGHER with the specified faction(s).
-				"sindiran_diktat":0.25,
-			},
-			"trigger_playerRelationship_atMost": { # Default: no values. This job will require the player to have the specified relationship or LOWER with the specified faction(s).
-				"pirates":-0.5,
-			},		
-			
-			#BOUNTY DESCRIPTION
-			
-			"job_name": "Hunt down a pack of convicts", # Default: "Unnamed job". Job name shown in the dialog pick list
-			"job_description": "Always on the lookout for solutions to foreign threats, a particularly ingenious Diktat officer came up with the idea of forcing murderers, thieves, and other death row prisoners to \"atone for their sins\". He would send them out on dangerous, frequently suicidal missions in expendable ships while giving orders from his elite battlecruiser. Eventually, this band of convicts was forged into a half-decent band of scumbags, more than capable of surviving the trivial patrols assigned to them./nOn their way back from a routine sortie, the penal unit conspired to kill the officer and seize control of the fleet. After sending the bodies of the Conquest crewmembers on a course towards Salus, they were sighted at Umbra preparing to leave the system, and are likely far from here by now./nAnyone who thinks that they can escape the claws of the Lion are sorely mistaken. Make them pay for their sins.",
-																   # Default: blank. The description shown upon selecting the job.
-																   # \n creates a line break, for example "Line one.\nLine two."
-																   # $sonOrDaughter "son" if target is male, "daughter" otherwise.
-																   # $fatherOrMother "father" if target is male, "mother" otherwise.
-																   # $system_name The star system that the bounty fleet is in.
-																   # $shipName The name of the bounty flagship.
-																   # $target The name of the faction (with article) of the bounty fleet.
-																   # $reward The amount of credits being given as a reward.
-																   # $name The name of the bounty commander.
-																   # $firstName The first name of the bounty commander.
-																   # $lastName The last name of the bounty commander.
-																   # $constellation The constellation that the bounty fleet is in.
-			"job_comm_reply": "The comms screen opens up to reveal $name, disheveled and weary. $firstName eyes your attire and chuckles. \n\"You're not the Diktat officer I was expecting. No matter. I've lead this fleet through battles that would give the most experienced Diktat captain nightmares, so no spacer's going to tell this $sonOrDaughter of freedom to turn themselves in. Especially not after all that we've suffered at the hands of that miserable coward.\"", # Default: blank. The text shown if the player opens comms with the bounty fleet, defaults to "The other $shipOrFleet does not answer to your hails."
-			"job_intel_success": "The rogue penal unit has been obliterated. The Diktat thanks you for your service.", # Optional short conclusion text shown in the intel object after the job has been COMPLETED SUCCESSFULLY
-			#"job_intel_failure": "Short text displayed in the intel", # Optional short conclusion text shown in the intel object after the job has been failed through FLAGSHIP RECOVERY
-			"job_intel_expired": "The window of opportunity has closed, and the escaped penal unit has slipped away from the eyes of the Lion. A fleet matching their description has hit a trade fleet on the outskirts of the core. It will likely be very long until they can be pinned down again, if at all.", # Optional short conclusion text shown in the intel object after the job has EXPIRED
-			"job_forFaction": "sindiran_diktat", # Default: no faction. Note that unless "job_reputation_reward" is set, successfully completing a bounty will improve relations by 5 points.
-			"job_deadline": 90, # Default: no limit. The number of days to complete the bounty.
-			"job_credit_reward": 170000, # Default: no credit reward. Number of credits to award the player on successful completion.
-			"job_reward_scaling": 1.0, # Default: no scaling/bonus. Bonus credits based on FP. Bonus is the specified number multiplied by how many FP the bounty fleet was over their base FP.
-			"job_reputation_reward":10, # Default: 5 rep points. Reputation benefit with the faction posting the bounty, if any, in case of success. Set to 0 or less to disable, does not scale
-			#"job_item_reward": { # Default: no item rewards. Lists special items that will be added to the post-battle loot. First value is the item id, second is the number to give the player.
-			#	"item_A":1,
-			#},
-			"job_type":"obliteration", # Default: assassination.
-					# assassination: required only to disable the flagship, may recover it.
-					# destruction: requires the complete destruction of the flagship without recovery.
-					# obliteration: requires the complete destruction or disabling of the enemy fleet, may recover.
-					# neutralisation: requires the destruction or disabling of 2/3rd of the enemy fleet, may recover.
-			"job_show_type": true, # Default: true. Make sure to explain the mission objective in the bounty description if you choose to not use the default display.
-			"job_show_captain": false, # Default: false. Whether to show the bounty fleet captain on the job board. If false, shows the flag of the giving faction.
-			"job_show_fleet": "flagshipText", # Default: "none".
-					# How much of the fleet to show on the bounty board.
-					# text: "The intel assessment notes the target fleet may contain upwards of %s ships."
-					# flagship: only shows an image of the flagship
-					# flagshipText: shows an image of the flagships and a text with the number of other ships
-					# preset: only show an image of the Flagship and the preset fleet
-					# presetText: show an image of the Flagship and the preset fleet, plus a text with the number of other ships
-					# vanilla: shows the Flagship and the 9 biggest ships of the fleet, plus a text with the number of other ships
-					# all: show an image of all the ships in the fleet.
-			"job_show_distance": "vague", # Default: "none".
-					# How precisely the distance to the target is shown on the bounty board.
-					# none: Do not show the distance.
-					# vague: "The target is located somewhere in the vicinity of the core worlds."
-					# distance: "It is located roughly %s LY away from your current position."
-					# vanilla: "The target is located near a giant in a system with a yellow primary star, in the Nebulon constellation."
-					# vanillaDistance: "The target is located near a giant in a system with a yellow primary star, in the Nebulon constellation. It is located roughly %s LY away from your current position."
-			"job_show_arrow": false, # Default: true. Whether to show an arrow on the Intel map pointing from the start to the bounty target location
-			"job_difficultyDescription": "auto",  # Default: no description shown. "none": no description, "auto": bounty board describes how dangerous the bounty is, any other text: bounty board displays the text.
-			"job_pick_option": "Accept the job", # Default: "Accept the job". The text option that, when selected, accepts the bounty job.
-			#"job_pick_script": "data.script.FancyScriptThatDoStuff", # Default: no script. Triggered after accepting, can be used to trigger further scripts when the mission is taken, for example you may want to have competing bounty hunters
-			#"job_memKey":"$jobMemKey",	# Defaults to "$bountyId", memKeys always start with "$". The specified memkey will be set to false when the job is accepted, then true if it is completed successfully.
-			#"job_conclusion_script":"data.script.FancyScriptThatDoStuff", # Default: no script. Can be used to give additional rewards or add further consequences in case of failure using memkeys to check the outcome
-			
-			#TARGET COMMANDER (OPTIONAL)
-			
-			#"target_first_name":"Firstname", # Default: randomly selected based on faction.
-			#"target_last_name":"Lastname", # Default: randomly selected based on faction.
-			#"target_portrait":"portraitId", # Default: randomly selected based on faction. Id of the sprite in settings.json/graphics/characters
-			#"target_gender":"ANY", # Default: ANY. [MALE, FEMALE, ANY]
-			"target_rank": "terrorist", # Default: "citizen". Rank from campaign.ids.Ranks [https://jaghaimo.github.io/starsector-api/classcom_1_1fs_1_1starfarer_1_1api_1_1impl_1_1campaign_1_1ids_1_1Ranks.html]
-			"target_post": "criminal", # Default: "spacer". Post from campaign.ids.Ranks (yes, Ranks, posts are the bottom half). [https://jaghaimo.github.io/starsector-api/classcom_1_1fs_1_1starfarer_1_1api_1_1impl_1_1campaign_1_1ids_1_1Ranks.html]
-			"target_personality": "aggressive", # Default: Randomly selected. Personality from campaign.ids.Personalities ("timid", "cautious", "steady", "aggressive", "reckless")
-			"target_aiCoreId": null, # Default: null (not an AI). The AI Core id of the bounty commander. Core will be dropped as loot. Options: [ null, "gamma_core", "beta_core", "alpha_core" ]
-			"target_level": 6, # Default: 0. The level of the bounty commander
-			"target_elite_skills":2, # Default: Max elite skills. Overrides the regular number of elite skills, set to -1 to ignore.
-			"target_skill_preference": "GENERIC", # Default: "GENERIC". ["GENERIC", "PHASE", "CARRIER", "ANY"] (from OfficerManagerEvent.SkillPickPreference)
-			"target_skills": { # Default: random. OVERRIDES ALL RANDOM SKILLS
-				"crew_training":2,
-			}, 
+    "trigger_market_id": [
+      "cruor"
+    ], # Default: no values. Can default to the other preferences if those are defined and the location doesn't exists due to Nexerelin random mode. 
+                                              # This beats all other conditions; a job will ALWAYS show in this market, even if other conditions fail.
+    "trigger_marketFaction_any": [
+      "sindrian_diktat"
+    ], # Default: no values. markets of these factions will show the bounty (if other conditions are met).
+    "trigger_marketFaction_alliedWith": false, # Default: false. if true, markets of all factions whose relationship is at least FAVORABLE to ANY ONE of the factions above will show the bounty (if other conditions are met).
+		#"trigger_marketFaction_none": ["other_faction"], # Default: no values. markets of factions listed here will never carry the bounty, regardless of other conditions.
+		#"trigger_marketFaction_enemyWith": false, # Default: false. If true, markets of all factions whose relationship is HOSTILE to EVERY ONE (ALL) of the factions above. Beware when using this parameter with multiple excluded factions.
+		#"trigger_market_minSize": 3, # Default: 0. The minimum size of the market.
+    "trigger_player_minLevel": 8, # Default: 0. The minimum level of the player.
+    "trigger_min_days_elapsed": 90, # Default: 0. The minimum number of days that must have elapsed.
+    "trigger_weight_mult": 1, # Default: -1. Simple frequency multiplier when several bounties compete for limited board slots. Weights are added together, then one is picked at random, with higher weights having a higher chance.
+		#"trigger_memKeys_all": { # Default: no values. The job will only show if ALL of the listed memKeys exist with the specified boolean value.
+		#	"$triggerKey":true,
+		#},
+		#"trigger_memKeys_any": { # Default: no values. The job will show if ANY of the listed memKeys exist with the specified boolean value.
+		#	"$triggerKey":true,
+		#},
+    "trigger_playerRelationship_atLeast": {
+ # Default: no values. This job will require the player to have the specified relationship or HIGHER with the specified faction(s).
+      "sindiran_diktat": 0.25
+    },
+    "trigger_playerRelationship_atMost": {
+ # Default: no values. This job will require the player to have the specified relationship or LOWER with the specified faction(s).
+      "pirates": -0.5
+    },
 		
+		#BOUNTY DESCRIPTION
 		
-			#TARGET FLEET
-			
-			"fleet_name":"Spare Armada", # Default: no name.
-			"fleet_faction": "pirates", # Required. The faction id from [https://jaghaimo.github.io/starsector-api/classcom_1_1fs_1_1starfarer_1_1api_1_1impl_1_1campaign_1_1ids_1_1Factions.html] or a custom faction id.
-			"fleet_flagship_variant":"conquest_Elite", # Required.
-			"fleet_flagship_name":"Warden Of Freedom", # Random.
-			"fleet_flagship_recoverable": true, # Default: false. Whether the flagship will be always recoverable. Allowing this will still let the player fail the bounty if they were not supposed to recover the flagship.
-			#"fleet_preset_ships": { # Default: no presets. Preset fleet generated with the flagship. First value is the variant id, second is the number of them in the fleet.
-			#	"ship_variant1":1,
-			#	"ship_variant2":3,			
-			#},
-			"fleet_scaling_multiplier": 1, # Default: no scaling. Dynamic reinforcements to match that amount of player fleet DP, set to 0 to ignore.
-			"fleet_min_DP": 60, # Default: no minimum. Minimal total fleet size, set to -1 to ignore.
-			"fleet_composition_faction": "pirates", # Default: bounty fleet faction. Used if the extra ships don't match the fleet's faction. For example a pirate fleet of Hegemony deserters. Required for min FP and player adjustment.
-			"fleet_composition_quality": 1, # Default: 2 for no Dmods.
-			"fleet_transponder": false, # Default: true.
-			"fleet_behavior": "ROAMING", # Default:"GUARDED". The fleet's behavior on the campaign layer. Options: ["PASSIVE", "GUARDED", "AGGRESSIVE", "ROAMING"].
+    "job_name": "Hunt down a pack of convicts", # Default: "Unnamed job". Job name shown in the dialog pick list
+    "job_description": "Always on the lookout for solutions to foreign threats, a particularly ingenious Diktat officer came up with the idea of forcing murderers, thieves, and other death row prisoners to \"atone for their sins\". He would send them out on dangerous, frequently suicidal missions in expendable ships while giving orders from his elite battlecruiser. Eventually, this band of convicts was forged into a half-decent band of scumbags, more than capable of surviving the trivial patrols assigned to them./nOn their way back from a routine sortie, the penal unit conspired to kill the officer and seize control of the fleet. After sending the bodies of the Conquest crewmembers on a course towards Salus, they were sighted at Umbra preparing to leave the system, and are likely far from here by now./nAnyone who thinks that they can escape the claws of the Lion are sorely mistaken. Make them pay for their sins.",
+                                                               # Default: blank. The description shown upon selecting the job.
+                                                               # \n creates a line break, for example "Line one.\nLine two."
+                                                               # $sonOrDaughter "son" if target is male, "daughter" otherwise.
+                                                               # $fatherOrMother "father" if target is male, "mother" otherwise.
+                                                               # $system_name The star system that the bounty fleet is in.
+                                                               # $shipName The name of the bounty flagship.
+                                                               # $target The name of the faction (with article) of the bounty fleet.
+                                                               # $reward The amount of credits being given as a reward.
+                                                               # $name The name of the bounty commander.
+                                                               # $firstName The first name of the bounty commander.
+                                                               # $lastName The last name of the bounty commander.
+                                                               # $constellation The constellation that the bounty fleet is in.
+    "job_comm_reply": "The comms screen opens up to reveal $name, disheveled and weary. $firstName eyes your attire and chuckles. \n\"You're not the Diktat officer I was expecting. No matter. I've lead this fleet through battles that would give the most experienced Diktat captain nightmares, so no spacer's going to tell this $sonOrDaughter of freedom to turn themselves in. Especially not after all that we've suffered at the hands of that miserable coward.\"", # Default: blank. The text shown if the player opens comms with the bounty fleet, defaults to "The other $shipOrFleet does not answer to your hails."
+    "job_intel_success": "The rogue penal unit has been obliterated. The Diktat thanks you for your service.", # Optional short conclusion text shown in the intel object after the job has been COMPLETED SUCCESSFULLY
+        #"job_intel_failure": "Short text displayed in the intel", # Optional short conclusion text shown in the intel object after the job has been failed through FLAGSHIP RECOVERY
+    "job_intel_expired": "The window of opportunity has closed, and the escaped penal unit has slipped away from the eyes of the Lion. A fleet matching their description has hit a trade fleet on the outskirts of the core. It will likely be very long until they can be pinned down again, if at all.", # Optional short conclusion text shown in the intel object after the job has EXPIRED
+    "job_forFaction": "sindiran_diktat", # Default: no faction. Note that unless "job_reputation_reward" is set, successfully completing a bounty will improve relations by 5 points.
+    "job_deadline": 90, # Default: no limit. The number of days to complete the bounty.
+    "job_credit_reward": 170000, # Default: no credit reward. Number of credits to award the player on successful completion.
+    "job_reward_scaling": 1, # Default: no scaling/bonus. Bonus credits based on FP. Bonus is the specified number multiplied by how many FP the bounty fleet was over their base FP.
+    "job_reputation_reward": 10, # Default: 5 rep points. Reputation benefit with the faction posting the bounty, if any, in case of success. Set to 0 or less to disable, does not scale
+		#"job_item_reward": { # Default: no item rewards. Lists special items that will be added to the post-battle loot. First value is the item id, second is the number to give the player.
+		#	"item_A":1,
+		#},
+    "job_type": "obliteration", # Default: assassination.
+				# assassination: required only to disable the flagship, may recover it.
+				# destruction: requires the complete destruction of the flagship without recovery.
+				# obliteration: requires the complete destruction or disabling of the enemy fleet, may recover.
+				# neutralisation: requires the destruction or disabling of 2/3rd of the enemy fleet, may recover.
+    "job_show_type": true, # Default: true. Make sure to explain the mission objective in the bounty description if you choose to not use the default display.
+    "job_show_captain": false, # Default: false. Whether to show the bounty fleet captain on the job board. If false, shows the flag of the giving faction.
+    "job_show_fleet": "flagshipText", # Default: "none".
+				# How much of the fleet to show on the bounty board.
+				# text: "The intel assessment notes the target fleet may contain upwards of %s ships."
+				# flagship: only shows an image of the flagship
+				# flagshipText: shows an image of the flagships and a text with the number of other ships
+				# preset: only show an image of the Flagship and the preset fleet
+				# presetText: show an image of the Flagship and the preset fleet, plus a text with the number of other ships
+				# vanilla: shows the Flagship and the 9 biggest ships of the fleet, plus a text with the number of other ships
+				# all: show an image of all the ships in the fleet.
+    "job_show_distance": "vague", # Default: "none".
+				# How precisely the distance to the target is shown on the bounty board.
+				# none: Do not show the distance.
+				# vague: "The target is located somewhere in the vicinity of the core worlds."
+				# distance: "It is located roughly %s LY away from your current position."
+				# vanilla: "The target is located near a giant in a system with a yellow primary star, in the Nebulon constellation."
+				# vanillaDistance: "The target is located near a giant in a system with a yellow primary star, in the Nebulon constellation. It is located roughly %s LY away from your current position."
+    "job_show_arrow": false, # Default: true. Whether to show an arrow on the Intel map pointing from the start to the bounty target location
+    "job_difficultyDescription": "auto", # Default: no description shown. "none": no description, "auto": bounty board describes how dangerous the bounty is, any other text: bounty board displays the text.
+    "job_pick_option": "Accept the job", # Default: "Accept the job". The text option that, when selected, accepts the bounty job.
+		#"job_pick_script": "data.script.FancyScriptThatDoStuff", # Default: no script. Triggered after accepting, can be used to trigger further scripts when the mission is taken, for example you may want to have competing bounty hunters
+		#"job_memKey":"$jobMemKey",	# Defaults to "$bountyId", memKeys always start with "$". The specified memkey will be set to false when the job is accepted, then true if it is completed successfully.
+		#"job_conclusion_script":"data.script.FancyScriptThatDoStuff", # Default: no script. Can be used to give additional rewards or add further consequences in case of failure using memkeys to check the outcome
 		
+		#TARGET COMMANDER (OPTIONAL)
 		
-			#LOCATION
-			
-			"location_marketIDs": [  # Default: no preset. Preset locations to spawn the bounty fleet, can default to the preferences if those are defined and the location doesn't exists due to Nexerelin random mode.
-				"location"
-			],
-			"location_marketFactions": [  # Default: no faction specified. Markets of specified faction for the fleet to spawn at. Adding a faction market supersedes all other parameters except location_id.
-				"faction" 
-			],
-			"location_distance": "CLOSE", # Default: no preference. How far from the center to spawn the bounty fleet. Options: "CORE", "CLOSE", "FAR" or just left empty to ignore.
-			"location_themes": [ # Default: no preference. System themes that are valid to spawn the fleet at.
-				"theme_interesting",
-				"theme_interesting_minor",	
-				"theme_ruins",
-				"theme_ruins_main",
-				"theme_ruins_secondary",
-				
-				"procgen_no_theme", #not so special bounties should add this attribute
-				"procgen_no_theme_pulsar_blackhole", #or this one
-			],
-			"location_themes_blacklist": [ # Default: none. System themes to never spawn the fleet at.
-				"theme_already_occupied",
-				"theme_hidden",
-				"theme_core_unpopulated",
-				"theme_core_populated",
-				"theme_core",
-				"theme_derelict",
-				"theme_derelict_mothership",
-				"theme_derelict_cryosleeper",
-				"theme_derelict_survey_ship",
-				"theme_derelict_probes",
-				"theme_unsafe",
-				"theme_remnant",
-				"theme_remnant_main",
-				"theme_remnant_secondary",
-				"theme_remnant_no_fleets",
-				"theme_remnant_destroyed",
-				"theme_remnant_suppressed",
-				"theme_remnant_resurgent",
-			],
-			"location_entities": [ # Default: no preference. Possible entities to spawn the fleet around. Default to PLANET + JUMP_POINT + STABLE_LOCATION if left empty
-				"gate",
-				"station",
-				"wreck",
-				"debris",
-				"stable_location",
-				"comm_relay",
-				"nav_buoy",
-				"sensor_array",
-				"gas_giant",
-				"planet",
-				"jump_point",
-			],
-			"location_prioritizeUnexplored": true, # Default: false. Will pick in priority systems that have not been visited by the player yet, but won't override the distance requirements.
-			"location_defaultToAnyEntity": true, # Default: false. If true and no suitable entity is found in any systems with the required Theme and distance, a random entity will be picked instead. Otherwise the script will ignore the distance requirements.
-		},
-	},	
+		#"target_first_name":"Firstname", # Default: randomly selected based on faction.
+		#"target_last_name":"Lastname", # Default: randomly selected based on faction.
+		#"target_portrait":"portraitId", # Default: randomly selected based on faction. Id of the sprite in settings.json/graphics/characters
+		#"target_gender":"ANY", # Default: ANY. [MALE, FEMALE, ANY]
+    "target_rank": "terrorist", # Default: "citizen". Rank from campaign.ids.Ranks [https://jaghaimo.github.io/starsector-api/classcom_1_1fs_1_1starfarer_1_1api_1_1impl_1_1campaign_1_1ids_1_1Ranks.html]
+    "target_post": "criminal", # Default: "spacer". Post from campaign.ids.Ranks (yes, Ranks, posts are the bottom half). [https://jaghaimo.github.io/starsector-api/classcom_1_1fs_1_1starfarer_1_1api_1_1impl_1_1campaign_1_1ids_1_1Ranks.html]
+    "target_personality": "aggressive", # Default: Randomly selected. Personality from campaign.ids.Personalities ("timid", "cautious", "steady", "aggressive", "reckless")
+    "target_aiCoreId": null, # Default: null (not an AI). The AI Core id of the bounty commander. Core will be dropped as loot. Options: [ null, "gamma_core", "beta_core", "alpha_core" ]
+    "target_level": 6, # Default: 0. The level of the bounty commander
+    "target_elite_skills": 2, # Default: Max elite skills. Overrides the regular number of elite skills, set to -1 to ignore.
+    "target_skill_preference": "GENERIC", # Default: "GENERIC". ["GENERIC", "PHASE", "CARRIER", "ANY"] (from OfficerManagerEvent.SkillPickPreference)
+    "target_skills": {
+ # Default: random. OVERRIDES ALL RANDOM SKILLS
+      "crew_training": 2
+    },
+	
+	
+		#TARGET FLEET
+		
+    "fleet_name": "Spare Armada", # Default: no name.
+    "fleet_faction": "pirates", # Required. The faction id from [https://jaghaimo.github.io/starsector-api/classcom_1_1fs_1_1starfarer_1_1api_1_1impl_1_1campaign_1_1ids_1_1Factions.html] or a custom faction id.
+    "fleet_flagship_variant": "conquest_Elite", # Required.
+    "fleet_flagship_name": "Warden Of Freedom", # Random.
+    "fleet_flagship_recoverable": true, # Default: false. Whether the flagship will be always recoverable. Allowing this will still let the player fail the bounty if they were not supposed to recover the flagship.
+		#"fleet_preset_ships": { # Default: no presets. Preset fleet generated with the flagship. First value is the variant id, second is the number of them in the fleet.
+		#	"ship_variant1":1,
+		#	"ship_variant2":3,			
+		#},
+    "fleet_scaling_multiplier": 1, # Default: no scaling. Dynamic reinforcements to match that amount of player fleet DP, set to 0 to ignore.
+    "fleet_min_DP": 60, # Default: no minimum. Minimal total fleet size, set to -1 to ignore.
+    "fleet_composition_faction": "pirates", # Default: bounty fleet faction. Used if the extra ships don't match the fleet's faction. For example a pirate fleet of Hegemony deserters. Required for min FP and player adjustment.
+    "fleet_composition_quality": 1, # Default: 2 for no Dmods.
+    "fleet_transponder": false, # Default: true.
+    "fleet_behavior": "ROAMING", # Default:"GUARDED". The fleet's behavior on the campaign layer. Options: ["PASSIVE", "GUARDED", "AGGRESSIVE", "ROAMING"].
+	
+	
+		#LOCATION
+		
+    "location_marketIDs": [
+  # Default: no preset. Preset locations to spawn the bounty fleet, can default to the preferences if those are defined and the location doesn't exists due to Nexerelin random mode.
+      "location"
+    ],
+    "location_marketFactions": [
+  # Default: no faction specified. Markets of specified faction for the fleet to spawn at. Adding a faction market supersedes all other parameters except location_id.
+      "faction"
+    ],
+    "location_distance": "CLOSE", # Default: no preference. How far from the center to spawn the bounty fleet. Options: "CORE", "CLOSE", "FAR" or just left empty to ignore.
+    "location_themes": [
+ # Default: no preference. System themes that are valid to spawn the fleet at.
+      "theme_interesting",
+      "theme_interesting_minor",
+      "theme_ruins",
+      "theme_ruins_main",
+      "theme_ruins_secondary",
+      "procgen_no_theme", #not so special bounties should add this attribute
+      "procgen_no_theme_pulsar_blackhole" #or this one
+    ],
+    "location_themes_blacklist": [
+ # Default: none. System themes to never spawn the fleet at.
+      "theme_already_occupied",
+      "theme_hidden",
+      "theme_core_unpopulated",
+      "theme_core_populated",
+      "theme_core",
+      "theme_derelict",
+      "theme_derelict_mothership",
+      "theme_derelict_cryosleeper",
+      "theme_derelict_survey_ship",
+      "theme_derelict_probes",
+      "theme_unsafe",
+      "theme_remnant",
+      "theme_remnant_main",
+      "theme_remnant_secondary",
+      "theme_remnant_no_fleets",
+      "theme_remnant_destroyed",
+      "theme_remnant_suppressed",
+      "theme_remnant_resurgent"
+    ],
+    "location_entities": [
+ # Default: no preference. Possible entities to spawn the fleet around. Default to PLANET + JUMP_POINT + STABLE_LOCATION if left empty
+      "gate",
+      "station",
+      "wreck",
+      "debris",
+      "stable_location",
+      "comm_relay",
+      "nav_buoy",
+      "sensor_array",
+      "gas_giant",
+      "planet",
+      "jump_point"
+    ],
+    "location_prioritizeUnexplored": true, # Default: false. Will pick in priority systems that have not been visited by the player yet, but won't override the distance requirements.
+    "location_defaultToAnyEntity": true # Default: false. If true and no suitable entity is found in any systems with the required Theme and distance, a random entity will be picked instead. Otherwise the script will ignore the distance requirements.
+  },
+  "klaw_rogue_tt_fleet": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_marketFaction_alliedWith": false,
+    "trigger_market_minSize": 3,
+    "trigger_player_minLevel": 3,
+    "trigger_min_days_elapsed": 20,
+    "trigger_weight_mult": 1,
+    "trigger_playerRelationship_atLeast": {
+      "tritachyon": -0.25
+    },
+		#BOUNTY DESCRIPTION
+
+    "job_name": "Tri-Tachyon Corp. Privateering Opportunity", #job name in the dialog pick list
+    "job_description": "A corporate holo-record flickers into your TriPad and starts playing. A blue suit with a very big smile, sitting in a nice, all-white office explains the details of the mission while maintaining eye contact.\nThe Tri-Tachyon Corporation is always on the look for bright, entrepreneuring captains. If you command a small mercenary fleet, we wish to offer you a legally binding elimination contract. Cooperate with the Corporation interests, get handsomely rewarded, and be granted  profitable opportunities within Tri-Tachyon space in the future!.\nThere's a former task force fleet that went rogue and ran away with Tri-Tachyon goods, failing to uphold their contract terms. Their captain was a low rank military officer, $firstname $lastname. Your job is to find and decimate the entirety of the fleet by any means, preferably starship weapon fire. We are not interested in prisoners or salvage and will not grant extra credits for any of them. It is mandatory that captain $firstname is eliminated.\nCaptain, although they are nothing but pirates at this point, these ships are advanced combat vessels piloted by professional combat pilots. Captain $name commands a Shrike-class destroyer as $hisOrHerOrTheir flagship. Caution is advised before engaging them in combat.\nLastly, if you happen to find any of the stolen items, bring them to any Tri-Tachyon Station Commander and you will be adequately rewarded for them. The mission terms don't include bringing the items back, since it is not assured that Hoxe still has them.\n$firstname $lastname's fleet has been located near $fleetAssignmentTarget in the $system_name system.",
+    "job_comm_reply": "As the terminal shows the feed of the enemy flagship's bridge, you can see $hisOrHerOrTheir crew quickly getting systems ready and taking to their seats in the commands. You can tell they are military: the way they move around, the orderly equipment...\nYou barely grasp sight of some kind of high security tech crate in the background, when captain $name sits on front of the feed and blocks view of it.\n'So the suits found us again, and sent yet another genius entrepreneur as their latest lap dog to kill us. How curious -laughs and chuckles can be heard near $lastName-. This is gonna be fun. Do you think the Corp gives a damn about you? You are just another expendable, delusional fool if you thought this would be an easy job.\nEngage combat protocols. Prepare to die, scum.'",
+    "job_deadline": 90,
+    "job_credit_reward": 95000,
+    "job_item_reward": {
+      "beta_core": 1
+    },
+    "job_difficultyDescription": "auto",
+    "job_reputation_reward": 15,
+    "job_type": "obliteration",
+    "job_show_type": true,
+    "job_show_captain": true,
+    "job_show_fleet": "presetText,",
+    "job_show_distance": "vanillaDistance,",
+    "job_show_arrow": false,
+    "job_pick_option": "Accept the Tri-Tachyon contract",
+    "job_memKey": "$bountyId",
+
+		#TARGET COMMANDER (OPTIONAL)
+    "target_first_name": "Vadius",
+    "target_last_name": "Hoxe",
+    "target_portrait": "vanilla_portrait35", #id of the sprite in settings.json/graphics/characters
+		#"vanilla_portrait35":"graphics/portraits/portrait35.png",
+    "target_gender": "MALE", #MALE, FEMALE, ANY
+    "target_rank": "agent", #rank from campaign.ids.Ranks
+    "target_post": "mercenary", #post from campaign.ids.Ranks
+    "target_personality": "aggressive",
+    "target_isAI": false,
+    "target_level": 6,
+    "target_elite_skills": 2,
+    "target_skill_preference": "GENERIC",
+
+		#TARGET FLEET
+
+    "fleet_name": "Rogue TT Task Force",
+    "fleet_faction": "pirates",
+    "fleet_flagship_variant": "medusa_attack",
+    "fleet_flagship_name": "Ghost",
+    "fleet_flagship_recoverable": true,
+    "fleet_preset_ships": {
+      "wolf_assault": 2,
+      "wolf_CS": 1,
+      "brawler_tritachyon_Standard": 1,
+      "centurion_Starting": 1,
+      "mule_Fighter_Support": 1
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_DP": -1,
+		#"fleet_composition_faction":"tritachyon", #used if the extra ships don't match the fleet's faction. For example a pirate fleet of Hegemony deserters. Required for min FP and player adjustment
+    "fleet_composition_quality": 2,
+    "fleet_transponder": false,
+    "fleet_behavior": "AGGRESSIVE",
+
+		#LOCATION
+
+		#"location_distance": "CLOSE",
+    "location_themes": [
+      "theme_derelict",
+      "theme_derelict_survey_ship",
+      "theme_derelict_probes",
+      "theme_remnant_no_fleets",
+      "theme_ruins_secondary",
+      "theme_remnant_secondary",
+      "theme_remnant",
+      "theme_remnant_destroyed"
+    ],
+    "location_themes_blacklist": [
+      "theme_already_occupied",
+      "theme_remnant_resurgent"
+    ],
+    "location_entities": [
+      "gate",
+      "wreck",
+      "debris",
+      "planet",
+      "jump_point"
+    ],
+    "location_prioritizeUnexplored": true,
+    "location_defaultToAnyEntity": true
+  }
 }
