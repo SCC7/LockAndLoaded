@@ -467,5 +467,96 @@
     ],
     "location_prioritizeUnexplored": true,
     "location_defaultToAnyEntity": true
-  }
+  },
+
+  "wisp_corpEsp_I": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_market_minSize": 4,
+    "job_name": "Deal with corporate espionage",
+    "job_description": "I am the Head of Sales for a promising startup that is disrupting the financial sector. By cutting out the middle-man, we save our clients MILLIONS on everyday fees.\nUnfortunately, one of my partners has stolen valuable client information and taken refuge in orbit around $orbitTarget. The employment contract they signed is clear; protection of the company IP is paramount, with penalities up to, and including, termination. I, of course, deeply regret to be forced into following this specific course of action, but my hands are completely tied.",
+    "job_comm_reply": "A silky, recorded voice plays. \"Mr. Collins is on vacation. Please leave a message and he may get back to you.\"",
+    "job_forFaction": "tritachyon",
+    "job_credit_reward": 20000,
+    "job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "preset",
+    "job_show_distance": "vanillaDistance",
+    "job_show_arrow": true,
+    "job_memKey": "$mb_wisp_corpesp_I",
+    "target_first_name": "George",
+    "target_last_name": "Collins",
+    "target_gender": "MALE",
+    "target_rank": "citizen",
+    "target_post": "executive",
+    "target_personality": "cautious",
+    "target_level": 2,
+    "target_elite_skills": -1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Live Laugh Work",
+    "fleet_faction": "pirate",
+    "fleet_flagship_variant": "mercury_Attack",
+    "fleet_flagship_name": "FinMin Can Save You Millions",
+    "fleet_preset_ships": {
+      "tempest_Attack": 1
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_DP": -1,
+    "fleet_composition_faction": "tritachyon",
+	"fleet_transponder": false,
+    "fleet_behavior": "PASSIVE",
+    "location_distance": "CORE",
+	"location_marketFactions": [
+		"tritachyon" 
+	],
+    "author": "Wisp"
+  },
+
+  "wisp_corpEsp_II": {
+    "trigger_marketFaction_any": [
+      "tritachyon"
+    ],
+    "trigger_market_minSize": 4,
+	"trigger_memKeys_all": {
+	  "$mb_wisp_corpesp_I": true,
+	},
+    "job_name": "Handle corporate espionage",
+    "job_description": "I am the COO of a promising startup that is disrupting the financial sector. By cutting out the middle-man, we save our clients MILLIONS on everyday fees.\nUnfortunately, one of my partners has stolen valuable client information and taken refuge in orbit around $orbitTarget. The employment contract they signed is clear; protection of the company IP is paramount, with penalities up to, and including, termination. I, of course, deeply regret to be forced into following this specific course of action, but my hands are completely tied.",
+    "job_comm_reply": "A husky, recorded voice plays. \"Ms. Treepah is currently busy. For questions regarding MinFin, please contact Eoin Shilherry. For all other questions, leave a message.\"",
+    "job_forFaction": "tritachyon",
+    "job_credit_reward": 30000,
+    "job_reward_scaling": 1,
+    "job_show_captain": true,
+    "job_show_fleet": "preset",
+    "job_show_distance": "vanillaDistance",
+    "job_show_arrow": true,
+    "job_memKey": "$mb_wisp_corpesp_II",
+    "target_first_name": "Ellery",
+    "target_last_name": "Treepah",
+    "target_gender": "FEMALE",
+    "target_rank": "citizen",
+    "target_post": "executive",
+    "target_personality": "cautious",
+    "target_level": 2,
+    "target_elite_skills": -1,
+    "target_skill_preference": "GENERIC",
+    "fleet_name": "Ms. Treepah's Fleet",
+    "fleet_faction": "pirate",
+    "fleet_flagship_variant": "mercury_Attack",
+    "fleet_flagship_name": "Cats and Money",
+    "fleet_preset_ships": {
+      "tempest_Attack": 2
+    },
+    "fleet_scaling_multiplier": 0,
+    "fleet_min_DP": -1,
+    "fleet_composition_faction": "tritachyon",
+	"fleet_transponder": false,
+    "fleet_behavior": "PASSIVE",
+    "location_distance": "CORE",
+	"location_marketFactions": [
+		"tritachyon" 
+	],
+    "author": "Wisp"
+  },
 }
