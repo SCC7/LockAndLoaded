@@ -460,7 +460,6 @@
 		#LOCATION
 		
     "location_themes": [
-      "theme_hidden",
       "theme_interesting",
       "theme_interesting_minor",
       "theme_ruins",
